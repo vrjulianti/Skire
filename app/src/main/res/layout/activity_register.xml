@@ -85,6 +85,48 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_phone"
+            style="@style/LoginTextInputLayoutStyle"
+            app:hintTextAppearance="@style/HintText"
+            app:hintEnabled="true"
+            app:errorEnabled="true" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/passwordLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPhone"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/educationLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_education"
+            style="@style/LoginTextInputLayoutStyle"
+            app:hintTextAppearance="@style/HintText"
+            app:hintEnabled="true"
+            app:errorEnabled="true" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/phoneLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEducation"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
             android:elevation="4dp"
             android:id="@+id/buttonRegister"
@@ -101,8 +143,9 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="16dp" android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/passwordLayout"/>
+            android:layout_marginEnd="16dp"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/educationLayout"/>
 
     <ProgressBar
             android:id="@+id/progressBarRegist"

@@ -63,11 +63,15 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
         val name = edtName.text.toString()
         val email = edtEmail.text.toString()
         val password = edtPassword.text.toString()
+        val no_hp = edtPhone.text.toString()
+        val pendidikan = edtEducation.text.toString()
 
         when {
             name.isEmpty() -> edtName.error = "Wajib diisi"
             email.isEmpty() -> edtEmail.error = "Wajib diisi"
             password.isEmpty() -> edtPassword.error = "Wajib diisi"
+            no_hp.isEmpty() -> edtPhone.error = "Wajib diisi"
+            pendidikan.isEmpty() -> edtEducation.error = "Wajib diisi"
             password.length < 6 -> edtPassword.error = "Password min 6 karakter"
 
             else -> {
@@ -76,7 +80,7 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
                 auth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) {
                         if (it.isSuccessful) {
-                            val user = Users(name, email)
+                            val user = Users(name, email, no_hp, pendidikan)
 
                             val newUser = dbRef.child(mAuth.currentUser!!.uid)
                             newUser.setValue(user).addOnCompleteListener(OnCompleteListener<Void> { task ->
