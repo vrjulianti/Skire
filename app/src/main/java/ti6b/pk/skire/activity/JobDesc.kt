@@ -3,8 +3,8 @@ package ti6b.pk.skire.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_job_desc.*
-import ti6b.pk.skire.adapter.PagerAdapter
 import ti6b.pk.skire.R
+import ti6b.pk.skire.adapter.PagerAdapter
 
 
 class JobDesc : AppCompatActivity() {
