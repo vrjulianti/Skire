@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".fragment.TrainingFragment">
+
+    <TextView
+            android:id="@+id/tv_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fasilitas Pelatihan"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black_text2"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/linearLayout">
+
+        <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/ic_teks_48"/>
+        <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Teks"
+                android:textSize="14sp"
+                android:textColor="@color/black_text2"
+                android:layout_marginLeft="12dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:id="@+id/linearLayout2">
+
+        <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/ic_video_filled"/>
+        <TextView
+                android:id="@+id/tv_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black_text2"
+                android:layout_marginLeft="12dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginBottom="4dp">
+
+        <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_test_48"
+                android:layout_marginLeft="4dp"/>
+        <TextView
+                android:id="@+id/tv_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uji Kemampuan"
+                android:textSize="14sp"
+                android:textColor="@color/black_text2"
+                android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tv_label2"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Apa yang Akan Saya Pelajari?"
+            android:maxLines="3"
+            android:textColor="@color/black_text2"
+            android:ellipsize="end"/>
+
+    <TextView
+            android:id="@+id/training_desc"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Menjadi customer service membutuhkan teknik komunikasi yang baik karena pekerjaan ini melibatkan banyak sekali interaksi. Untuk itu, pelatihan ini akan memberikan..."
+            android:maxLines="3"
+            android:textColor="@color/black_text2"
+            android:ellipsize="end"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:text="Selengkapnya"
+            android:textColor="@color/colorPrimary"
+            android:clickable="true"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="12dp"
+            android:background="#C4C1C1"
+            android:id="@+id/view2"/>
+
+    <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Materi Pelatihan"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="14sp"
+            android:textColor="@color/black_text2"/>
+
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="12dp"
+            android:background="#C4C1C1"
+            android:id="@+id/view3"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

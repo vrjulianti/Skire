@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cv_jobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="8dp">
+
+    <LinearLayout
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+    android:background="@color/colorAccent">
+
+        <ImageView
+                android:id="@+id/image_job"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop"
+                android:outlineProvider="background"/>
+
+        <TextView
+                android:id="@+id/tv_jobTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Service"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textColor="@color/black_text2"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/linearLayout">
+
+            <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/ic_perekrut_48"/>
+            <TextView
+                    android:id="@+id/tv_jobRecruiter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 Perekrut"
+                    android:textSize="12sp"
+                    android:textColor="@color/black_text2"
+                    android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:id="@+id/linearLayout2">
+
+            <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="4dp"
+                   android:src="@drawable/ic_gaji_48"/>
+            <TextView
+                    android:id="@+id/tv_jobSalary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 3 jt - 5 jt"
+                    android:textSize="12sp"
+                    android:textColor="@color/black_text2"
+                    android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_marginBottom="4dp">
+
+            <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_durasi_48"
+                    android:layout_marginLeft="4dp"/>
+            <TextView
+                    android:id="@+id/tv_jobDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 Bulan"
+                    android:textSize="12sp"
+                    android:textColor="@color/black_text2"
+                    android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

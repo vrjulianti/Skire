@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "652226250797",
+    "firebase_url": "https://skireauth.firebaseio.com",
+    "project_id": "skireauth",
+    "storage_bucket": "skireauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652226250797:android:f54265d79fc860c3",
+        "android_client_info": {
+          "package_name": "ti6b.pk.skire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652226250797-u19ft9bc73fmf5bn15idq4ljojgbjcho.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ti6b.pk.skire",
+            "certificate_hash": "b39d2eb1a850ebc0bc2927defa3ffe7130bb8d1d"
+          }
+        },
+        {
+          "client_id": "652226250797-e957gmcoij61bifiaehjk2pdaso1ea3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD9iBgfND2enJvygFuaxecu-qCZfxOuHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "652226250797-e957gmcoij61bifiaehjk2pdaso1ea3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

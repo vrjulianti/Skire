@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Skire</string>
+
+    <!--string for EditText hint-->
+    <string name="hint_name">Nama Lengkap</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Password</string>
+
+    <!--string for button-->
+    <string name="button_login">MASUK</string>
+    <string name="button_register">DAFTAR</string>
+    <string name="checkbox_login">Ingat Saya</string>
+    <string name="textbutton_forget_password">Lupa Password</string>
+    <string name="facebook">Daftar dengan Facebook</string>
+    <string name="google">Daftar dengan Google</string>
+    <string name="email">Daftar dengan Email</string>
+
+    <!--string for error messages-->
+    <string name="input_empty">Wajib Diisi</string>
+    <string name="input_error_password_length">Password min. 8 karakter</string>
+
+    <!--string for label-->
+    <string name="label_rec_home">Rekomendasi Pekerjaan</string>
+    <string name="label_tips_home">Tips Untuk Kamu</string>
+
+    <string-array name="tips_img">
+        <item>
+            https://cdn0-production-images-kly.akamaized.net/v9n2NNEuEZYD4OlvceJ8aDTNiYU=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2746335/original/048102800_1552035032-Kampus-Binus2.jpg
+        </item>
+        <item>
+            https://cdn1-production-images-kly.akamaized.net/aUmi5wYgfCjHzfEDKrtZqKRU10c=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1710283/original/081701800_1505387117-bekerjacov.jpg
+        </item>
+    </string-array>
+
+    <string-array name="tips_title">
+        <item>Ingin Sukses Bekerja? Simak Pesan dari Peraih Nobel Ekonomi 2004 Ini</item>
+        <item>Perhatikan 3 Hal Ini Saat Cari Kerja</item>
+    </string-array>
+
+    <string-array name="tips_source">
+        <item>Liputan 6</item>
+        <item>Liputan 6</item>
+    </string-array>
+
+    <string-array name="tips_url">
+        <item>
+            https://www.liputan6.com/bisnis/read/3912589/ingin-sukses-bekerja-simak-pesan-dari-peraih-nobel-ekonomi-2004-ini
+        </item>
+        <item>https://www.liputan6.com/bisnis/read/3890239/perhatikan-3-hal-ini-saat-cari-kerja</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
