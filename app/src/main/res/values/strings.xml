@@ -34,6 +34,19 @@
         </item>
     </string-array>
 
+    <string name="pelatihan_saya">Pelatihan Saya</string>
+    <string name="pekerjaan">Kasir</string>
+    <string name="perekrut">3 Perekrut</string>
+    <string name="gaji">Rp 3-5 juta</string>
+    <string name="waktu">2 bulan</string>
+    <string name="sisa_materi">16 Materi tersisa</string>
+    <string name="pelatihan_materi">20 Materi pelatihan</string>
+    <string name="text_kolom">Temukan kumpulan pelatihan yang kamu ikuti. Selesaikan pelatihanmu tepat waktu yaa!
+    </string>
+    <string name="title_activity_pelatihan">PelatihanActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
     <string-array name="tips_title">
         <item>Ingin Sukses Bekerja? Simak Pesan dari Peraih Nobel Ekonomi 2004 Ini</item>
         <item>Perhatikan 3 Hal Ini Saat Cari Kerja</item>
