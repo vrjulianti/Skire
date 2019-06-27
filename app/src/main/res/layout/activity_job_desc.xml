@@ -16,10 +16,25 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="@mipmap/ic_launcher"
-                app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
                 app:layout_collapseMode="pin"
-                app:layout_scrollFlags="scroll|snap"/>
+                app:layout_scrollFlags="scroll|snap">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_back_black_48"
+                        android:layout_marginLeft="16dp"
+                />
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/image_desc"
+                        android:src="@mipmap/ic_launcher"
+                        android:scaleType="fitXY"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
 
         <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tablayout"
@@ -27,6 +42,7 @@
                 android:background="@color/colorPrimary"
                 android:layout_height="48dp"
                 app:layout_scrollFlags="scroll|enterAlways" />
+
 
     </com.google.android.material.appbar.AppBarLayout>
 

@@ -7,6 +7,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.intentFor
 import ti6b.pk.skire.*
 import ti6b.pk.skire.R
 import ti6b.pk.skire.adapter.JobsAdapter
@@ -50,7 +51,8 @@ class MainActivity : AppCompatActivity(), TipsView {
                 }
 
                 rv_recBased.adapter = JobsAdapter(applicationContext, jobs) {
-                    startActivity(Intent(this@MainActivity, JobDesc::class.java))
+                    startActivity(intentFor<JobDesc>("id" to it.id, "image" to it.image, "title" to it.title,
+                        "total_rec" to it.total_rec, "salary" to it.salary, "duration" to it.duration, "description" to it.description))
                 }
             }
         })
