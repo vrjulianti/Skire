@@ -7,16 +7,15 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.fragment_first.*
 import kotlinx.android.synthetic.main.fragment_training.*
-import org.jetbrains.anko.intentFor
-import org.jetbrains.anko.support.v4.intentFor
 import org.jetbrains.anko.support.v4.longToast
-import ti6b.pk.skire.DetailTrainingActivity
 import ti6b.pk.skire.R
 import ti6b.pk.skire.adapter.MaterialAdapter
+import ti6b.pk.skire.adapter.TrainingMatAdapter
 import ti6b.pk.skire.model.Material
 
-class TrainingFragment : Fragment() {
+class FirstFragment : Fragment() {
 
     lateinit var dbRef : DatabaseReference
 
@@ -25,7 +24,7 @@ class TrainingFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_training, container, false)
+        return inflater.inflate(R.layout.fragment_first, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -34,7 +33,7 @@ class TrainingFragment : Fragment() {
         val material: ArrayList<Material> = ArrayList()
 
         dbRef = FirebaseDatabase.getInstance().getReference("Submateri")
-        rv_material.layoutManager = LinearLayoutManager(activity)
+        rv_trainingBased.layoutManager = LinearLayoutManager(activity)
 
         dbRef.addValueEventListener(object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
@@ -50,8 +49,8 @@ class TrainingFragment : Fragment() {
                     getValue?.let { material.add(it) }
                 }
 
-                rv_material.adapter = MaterialAdapter(material) {
-                    longToast("succeed")
+                rv_trainingBased.adapter = TrainingMatAdapter(material) {
+                    longToast("rv berhasil")
 
                 }
             }

@@ -3,8 +3,7 @@
                                        xmlns:tools="http://schemas.android.com/tools"
                                        android:layout_width="match_parent"
                                        android:layout_height="match_parent"
-                                       android:orientation="vertical"
-                                       tools:context=".fragment.FirstFragment">
+                                       android:orientation="vertical">
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -22,7 +21,7 @@
                     android:id="@+id/tv_babNumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bab 1"
+                    android:text="Bab 3"
                     android:textSize="18sp"
                     android:textColor="@color/black_text2"/>
 
@@ -30,7 +29,7 @@
                     android:id="@+id/tv_babTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pengenalan"
+                    android:text="Persiapan Perekrutan"
                     android:layout_marginTop="4dp"
                     android:textSize="22sp"
                     android:textColor="@color/black_text2"
@@ -49,7 +48,7 @@
                     android:id="@+id/tv_babDesc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pada bab ini akan diajarkan cara berkomunikasi yang baik, baik dengan pelanggan maupun dengan pekerja lainnya"
+                    android:text="Dalam organisasi, rekrutmen ini menjadi salah satu proses yang penting dalam menentukan baik tidaknya pelamar yang akan melamar pada organisasi tersebut."
                     android:maxLines="3"
                     android:layout_marginTop="24dp"
                     android:ellipsize="end"
@@ -74,6 +73,30 @@
                 android:id="@+id/rv_trainingBased"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Mengikuti Perekrutan"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/buttonRecruit"
+        android:visibility="visible"/>
+
+        <TextView
+                android:id="@+id/tv_succeed"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Anda Telah Mengikuti Perekrutan"
+                  android:layout_marginTop="28dp"
+                  android:gravity="center_horizontal"
+        android:textColor="@color/pink_text"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
 
     </LinearLayout>
 
