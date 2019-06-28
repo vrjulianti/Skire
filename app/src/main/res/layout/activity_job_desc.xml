@@ -49,7 +49,8 @@
             android:background="@drawable/rounded_button"
             android:backgroundTint="@color/colorPrimary"
             android:text="Mulai Pelatihan"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/colorAccent"
+    android:id="@+id/buttonRecruit"/>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

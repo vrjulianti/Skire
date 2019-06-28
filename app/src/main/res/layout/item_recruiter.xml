@@ -3,6 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cv_recruiter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="4dp"
@@ -14,7 +15,7 @@
             android:padding="16dp">
 
         <ImageView
-                android:id="@+id/image_news"
+                android:id="@+id/image_company"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@mipmap/ic_launcher"
@@ -27,14 +28,14 @@
         <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_tipsTitle"
+                android:id="@+id/tv_companyName"
                 android:text="Hello World"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="@color/black_text2"
                 android:maxLines="4"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/image_news"
+                app:layout_constraintStart_toEndOf="@+id/image_company"
                 android:layout_marginStart="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
         />
@@ -46,8 +47,8 @@
                 android:orientation="horizontal"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="4dp"
-                app:layout_constraintTop_toBottomOf="@+id/tv_tipsTitle"
-                app:layout_constraintStart_toEndOf="@+id/image_news">
+                app:layout_constraintTop_toBottomOf="@+id/tv_companyName"
+                app:layout_constraintStart_toEndOf="@+id/image_company">
 
             <ImageView
                     android:layout_width="16dp"

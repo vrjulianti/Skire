@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+        android:id="@+id/list_training"
+android:padding="16dp">
+    
+    <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+    android:src="@drawable/ic_video_48"/>
+
+    <TextView
+            android:id="@+id/tv_itemTitle"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Ilmu Komunikasi Dasar"
+            android:gravity="center_vertical"
+    android:textSize="14sp"
+    android:textColor="@color/black_text2"/>
+
+</LinearLayout>
