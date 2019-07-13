@@ -6,9 +6,11 @@
     <string name="hint_email">E-mail</string>
     <string name="hint_password">Password</string>
     <string name="hint_phone">Nomor Telepon</string>
-    <string name="hint_education"> Pendidikan Terakhir </string>
+    <string name="hint_education">Pendidikan Terakhir</string>
 
-    <string name="pelatihan_screen">Kumpulan pelatihan yang kamu ikuti. Jangan lupa selesaikan pelatihanmu tepat waktu, ya!</string>
+    <string name="pelatihan_screen">Kumpulan pelatihan yang kamu ikuti. Jangan lupa selesaikan pelatihanmu tepat waktu,
+        ya!
+    </string>
 
 
     <!--string for button-->

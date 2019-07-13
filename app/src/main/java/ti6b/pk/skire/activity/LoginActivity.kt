@@ -9,6 +9,7 @@ import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 import org.jetbrains.anko.intentFor
 import org.jetbrains.anko.longToast
+import ti6b.pk.skire.ForgotPasswordActivity
 import ti6b.pk.skire.activity.MainActivity
 import ti6b.pk.skire.R
 
@@ -30,6 +31,11 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         mAuth = FirebaseAuth.getInstance()
 
         buttonLogin.setOnClickListener(this)
+
+        button_forgot_password.setOnClickListener{
+            startActivity(Intent(this@LoginActivity, ForgotPasswordActivity::class.java))
+            finish()
+        }
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)

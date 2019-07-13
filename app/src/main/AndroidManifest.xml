@@ -7,11 +7,13 @@
 
     <application
             android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
+            android:icon="@drawable/logo_skire"
             android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_round"
+            android:roundIcon="@drawable/logo_skire"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".ForgotPasswordActivity">
+        </activity>
         <activity android:name=".activity.MainActivity">
         </activity>
         <activity android:name=".activity.SearchActivity">
@@ -35,7 +37,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
