@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardListPelatihan"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="16dp">
+
+    <RelativeLayout
+            android:id="@+id/layoutCardPelatihan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/imgPelatihan"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_margin="12dp"/>
+
+        <TextView
+                android:id="@+id/textTitlePelatihan"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@+id/imgPelatihan"
+                android:text="Nama Pelatihan"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <ImageView
+                android:id="@+id/imgIconDurasiPelatihan"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/textTitlePelatihan"
+                android:layout_toRightOf="@+id/imgPelatihan"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_durasi_48"/>
+
+        <TextView
+                android:id="@+id/textDurasiPelatihan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgIconDurasiPelatihan"
+                android:layout_below="@+id/textTitlePelatihan"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:text="Durasi Pelatihan"
+                android:textSize="14sp"
+                android:textColor="#545454"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

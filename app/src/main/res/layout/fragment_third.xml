@@ -94,7 +94,7 @@
         android:text="Anda Telah Mengikuti Perekrutan"
                   android:layout_marginTop="28dp"
                   android:gravity="center_horizontal"
-        android:textColor="@color/pink_text"
+        android:textColor="@color/black_text2"
         android:textSize="16sp"
         android:visibility="invisible"/>
 
