@@ -50,7 +50,7 @@
             android:backgroundTint="@color/colorPrimary"
             android:text="Mulai Pelatihan"
             android:textColor="@color/colorAccent"
-    android:id="@+id/buttonRecruit"/>
+            android:id="@+id/buttonRecruit"/>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

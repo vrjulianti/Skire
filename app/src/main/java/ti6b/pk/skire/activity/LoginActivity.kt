@@ -7,7 +7,9 @@ import android.view.View
 import androidx.appcompat.widget.Toolbar
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
+import org.jetbrains.anko.intentFor
 import org.jetbrains.anko.longToast
+import ti6b.pk.skire.activity.MainActivity
 import ti6b.pk.skire.R
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
@@ -56,7 +58,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                         if (task.isSuccessful) {
                             // Sign in success, update UI with the signed-in user's information
                             mAuth.currentUser
-                            startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+                            startActivity(intentFor<MainActivity>())
                             longToast("Login Berhasil")
                             finish()
                         } else {

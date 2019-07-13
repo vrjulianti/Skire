@@ -12,17 +12,12 @@ import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_register.*
 import org.jetbrains.anko.longToast
 import org.jetbrains.anko.toast
+import ti6b.pk.skire.activity.MainActivity
 import ti6b.pk.skire.R
 import ti6b.pk.skire.model.Users
 
-class RegisterActivity : AppCompatActivity(), View.OnClickListener {
+class RegisterActivity : AppCompatActivity() {
 
-    override fun onClick(v: View?) {
-        when(v){
-            buttonRegister -> createUser()
-        }
-
-    }
 
     //Firebase references
     lateinit var dbRef : DatabaseReference
@@ -32,7 +27,9 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        buttonRegister.setOnClickListener(this)
+        buttonRegister.setOnClickListener {
+            createUser()
+        }
 
         mAuth = FirebaseAuth.getInstance()
         dbRef = FirebaseDatabase.getInstance().getReference("Users")
@@ -46,16 +43,11 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
             startActivity(Intent(this@RegisterActivity, OnboardingActivity::class.java))
             finish()
         }
-    }
 
+       /* if (mAuth.currentUser != null) {
 
-    public override fun onStart() {
-        super.onStart()
-        // Check if user is signed in (non-null) and update UI accordingly.
-        if (mAuth.currentUser != null) {
-
-            startActivity(Intent(this@RegisterActivity, OnboardingActivity::class.java))
-        }
+            startActivity(Intent(this@RegisterActivity, MainActivity::class.java))
+        }**/
     }
 
     private fun createUser() {

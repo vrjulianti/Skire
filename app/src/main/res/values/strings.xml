@@ -5,8 +5,11 @@
     <string name="hint_name">Nama Lengkap</string>
     <string name="hint_email">E-mail</string>
     <string name="hint_password">Password</string>
-    <string name="hint_phone">No HP</string>
-    <string name="hint_education">Pendidikan</string>
+    <string name="hint_phone">Nomor Telepon</string>
+    <string name="hint_education"> Pendidikan Terakhir </string>
+
+    <string name="pelatihan_screen">Kumpulan pelatihan yang kamu ikuti. Jangan lupa selesaikan pelatihanmu tepat waktu, ya!</string>
+
 
     <!--string for button-->
     <string name="button_login">MASUK</string>
@@ -33,19 +36,6 @@
             https://cdn1-production-images-kly.akamaized.net/aUmi5wYgfCjHzfEDKrtZqKRU10c=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1710283/original/081701800_1505387117-bekerjacov.jpg
         </item>
     </string-array>
-
-    <string name="pelatihan_saya">Pelatihan Saya</string>
-    <string name="pekerjaan">Kasir</string>
-    <string name="perekrut">3 Perekrut</string>
-    <string name="gaji">Rp 3-5 juta</string>
-    <string name="waktu">2 bulan</string>
-    <string name="sisa_materi">16 Materi tersisa</string>
-    <string name="pelatihan_materi">20 Materi pelatihan</string>
-    <string name="text_kolom">Temukan kumpulan pelatihan yang kamu ikuti. Selesaikan pelatihanmu tepat waktu yaa!
-    </string>
-    <string name="title_activity_pelatihan">PelatihanActivity</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
 
     <string-array name="tips_title">
         <item>Ingin Sukses Bekerja? Simak Pesan dari Peraih Nobel Ekonomi 2004 Ini</item>
