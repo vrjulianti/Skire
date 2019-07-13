@@ -15,14 +15,14 @@ class ForgotPasswordActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         when(v){
             btn_send -> {
-                val email = edt_email.text.toString()
+                val email = edtEmail.text.toString()
                 when{
-                    email.isEmpty() -> edt_email.error = "Must be filled"
+                    email.isEmpty() -> edtEmail.error = "Wajib Diisi"
                     else -> {
                         FirebaseAuth.getInstance().sendPasswordResetEmail(email)
                             .addOnCompleteListener { task ->
                                 if (task.isSuccessful) {
-                                    edt_email.setText("")
+                                    edtEmail.setText("")
                                     toast("Link reset password sent to your email")
                                 }
                             }
